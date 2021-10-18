@@ -1,3 +1,4 @@
+//>>>>>>>>>>>>>< PUNTO 1 <<<<<<<<<<<<<<<<<<<
 export class Mobile{
         //Atributos
     private name:string;
@@ -9,7 +10,7 @@ export class Mobile{
     private cameraNumber: number;
     private price: number;
 
-
+    //>>>>>>>>>>> PUNTO 2 <<<<<<<<<<<<
     constructor(name:string, model:string, trademark:string, sdsize:number, color: string, is5G: boolean, cameraNumber: number, price: number)
     {
         this.name = name;
@@ -22,7 +23,7 @@ export class Mobile{
         this.price = price;
     }
 
-    //>>>> Getters <<<<
+    //>>>> PUNTO 3 - Getters <<<<
     public getName():string {
         return this.name;
     }
@@ -75,7 +76,7 @@ export class Mobile{
         this.price = price;
     }
 
-    //>>>>>>>>> METODO <<<<<<<<<<<<
+    //>>>>>>>>> PUNTO 4 - METODO <<<<<<<<<<<<
     printAtrib(){
         return "The characteristic of the Mobile "+ this.name+ "are: " + "\n" + 
         "Name: " + this.name  + "\n" + 
