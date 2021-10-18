@@ -6,15 +6,15 @@ let iphone3G : Mobile = new Mobile("Iphone3G", "3G", "Iphone", 64, "red", false,
 let samsungGalaxy10 : Mobile = new Mobile("SamsungGalaxy", "Galaxy10", "Samsung", 64, "blue", true, 2, 300);
 
 //Atributos objeto
-// console.log(nokia3210.printAtrib());
-// console.log(iphone3G.printAtrib());
-// console.log(samsungGalaxy10.printAtrib())
+console.log(nokia3210.printAtrib());
+console.log(iphone3G.printAtrib());
+console.log(samsungGalaxy10.printAtrib())
 
 //modificar propiedades Nokia
 nokia3210.setIg5G(true);
 nokia3210.setCameraNumber(4);
-//console.log(nokia3210.getIs5G());
-//console.log(nokia3210.getCameraNumber());
+console.log(nokia3210.getIs5G());
+console.log(nokia3210.getCameraNumber());
 
 
 //Print todas las propiedades
