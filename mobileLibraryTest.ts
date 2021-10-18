@@ -9,7 +9,7 @@ let samsungGalaxy10 : Mobile = new Mobile("Samsung Galaxy", "Galaxy10", "Samsung
 let iphone13 : Mobile = new Mobile("Iphone 13", "13 Pro", "Iphone", 128, "golden", true, 3, 950)
 
 let mobiles : Mobile[] = [huaweiPsmart, redmiNote7, samsungGalaxy10, iphone13];
-//console.log(mobiles);
+console.log(mobiles);
 
 
 //>>>>>>>>>>>>> PUNTO 6 - Objeto library <<<<<<<<<<<<<<<<<<<<
@@ -25,8 +25,11 @@ console.log(objLib.getName());
 objLib.setLocation("London");
 console.log(objLib.getLocation());
 
+//Calcular precio total - solo cuando el metodo es publico
+//console.log(objLib.totalPriceCalculation());
+
 //Calcular precio total - Cambiado Privado
-console.log(objLib.totalPriceCalculation());
+console.log(objLib.getTotalPrice());
 
 let oppoX3 : Mobile = new Mobile("Oppo X3 Lite", "Find X3 Lite", "Oppo", 64, "black", true, 2, 200);
 let alcatel: Mobile = new Mobile("Alcatel 1S", "1S", "Alcatel", 32, "grey", false, 1, 77);
@@ -35,7 +38,7 @@ let mobile2 : Mobile[] = [oppoX3, alcatel];
 console.log(mobile2);
 
 
-// objetos de  librery
+// objetos de  library
 let objLib2 : MobileLibrary = new MobileLibrary ("MediaMark", "Madrid", [oppoX3, alcatel]);
 
 objLib2.printLibrary();
