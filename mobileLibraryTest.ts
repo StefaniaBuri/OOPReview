@@ -16,14 +16,14 @@ let mobiles : Mobile[] = [huaweiPsmart, redmiNote7, samsungGalaxy10, iphone13];
 let objLib : MobileLibrary = new MobileLibrary ("MediaMark", "Madrid", [huaweiPsmart, redmiNote7, samsungGalaxy10, iphone13]);
 
 //>>>>>>>>>>>>>>>> PUNTO 7 - Probando metodos, getters y setters
-// console.log(objLib.getName());
-// console.log(objLib.getLocation());
-// console.log(objLib.getMobiles());
+console.log(objLib.getName());
+console.log(objLib.getLocation());
+console.log(objLib.getMobiles());
 
-// objLib.setName("The Cardphone");
-// console.log(objLib.getName());
-// objLib.setLocation("London");
-// console.log(objLib.getLocation());
+objLib.setName("The Cardphone");
+console.log(objLib.getName());
+objLib.setLocation("London");
+console.log(objLib.getLocation());
 
 //Calcular precio total - Cambiado Privado
 console.log(objLib.totalPriceCalculation());
@@ -32,7 +32,7 @@ let oppoX3 : Mobile = new Mobile("Oppo X3 Lite", "Find X3 Lite", "Oppo", 64, "bl
 let alcatel: Mobile = new Mobile("Alcatel 1S", "1S", "Alcatel", 32, "grey", false, 1, 77);
 
 let mobile2 : Mobile[] = [oppoX3, alcatel];
-//console.log(mobile2);
+console.log(mobile2);
 
 
 // objetos de  librery
