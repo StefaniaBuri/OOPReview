@@ -13,6 +13,7 @@ export class MobileLibrary{
         this.name = name;
         this.location = location;
         this.mobiles = mobiles;
+        //>>>>>>>>> PUNTO 10 <<<<<<<<<<<
         this.totalPrice = this.totalPriceCalculation()
     }
 
@@ -44,14 +45,26 @@ export class MobileLibrary{
     }
 
     //>>>>>>>>>> Metodo <<<<<<<<<
+    //>>>> PUNTO 9 - PRIVATE <<<<<<<<<<
 
-
-    public totalPriceCalculation():number{
+    private totalPriceCalculation():number{
     let resultado : number = 0;
     for(let i = 0; i < this.mobiles.length; i++){
         resultado = this.mobiles[i].getPrice() + resultado;
     }
     return resultado;
     }
+
+    //>>>>>>>>>>> PUNTO 11 <<<<<<<<<<<<<
+    printLibrary(){
+        let objMob : string= "";
+         for (let i = 0; i < this.mobiles.length; i++){
+             objMob += this.mobiles[i].printAtrib()
+         }
+         console.log("This are all my mobiles:" + "\n" +
+         "The characteristic of the mobile are:"+ " "+ "\n" + 
+          objMob + " "+ "\n" +
+         "Price overvall: " + this.totalPrice+ "\n" );
+     }
     
 }
